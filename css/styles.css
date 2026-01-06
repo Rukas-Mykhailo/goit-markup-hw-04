@@ -128,9 +128,15 @@ a {
 /* ------------------ORDER---------------- */
 
 .order {
-    background-color: #2E2F42;
     padding-bottom: 188px;
     padding-top: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/order-bg.jpg);
+    max-width: 1440px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 
@@ -208,6 +214,19 @@ a {
 
 .features-text {
     letter-spacing: 0.02em;
+}
+
+.features-item-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    background-repeat: no-repeat;
+    margin-bottom: 8px;
 }
 
 /* ------------------TEAM---------------- */
