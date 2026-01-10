@@ -78,7 +78,13 @@ a {
   color: #2e2f42;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
+}
+
+.navigation-link.active {
+  color: #404bbf;
 }
 
 .navigation-link.active::after {
@@ -90,9 +96,7 @@ a {
   height: 4px;
   background-color: currentColor;
   border-radius: 2px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+
 }
 
 .navigation-link:hover,
@@ -409,13 +413,11 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
 }
 
 .portfolio-item:hover .portfolio-cashless-text {
-  background-color: #4d5ae5;
   transform: translateY(0);
 }
 
